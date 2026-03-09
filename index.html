@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maison Laïsma | L'élégance d'un souvenir</title>
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  
+    <link rel="stylesheet" href="beauti.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#produits">Créations</a></li>
+            <li><a href="#conseils">L'Atelier</a></li>
+            <li><a href="#guide-achat">Commander</a></li>
+        </ul>
+    </nav>
+
+    <header id="accueil" class="hero-section">
+        <div class="brand-container">
+            <div class="logo-wrapper">
+                <div class="maison-line">
+                    <h1 class="brand-title">MAISON</h1>
+                    <svg class="butterfly-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+                        <path d="M12 20c0-4.5 4-8 4-11.5S13.5 3 12 3s-4 2-4 5.5S12 15.5 12 20z"/>
+                        <path d="M12 11c-2-2-5-2-7 0s-1 5 3 7l4-3"/>
+                        <path d="M12 11c2-2 5-2 7 0s1 5-3 7l-4-3"/>
+                    </svg>
+                </div>
+                <p class="brand-subtitle">FASHION BRAND</p>
+                <h2 class="brand-name">LAÏSMA</h2>
+            </div>
+            <p class="catchphrase">"Votre satisfaction est un devoir."</p>
+        </div>
+    </header>
+
+    <section id="produits" class="products-section">
+        <div class="container">
+            <h2 class="section-title">Nos Créations</h2>
+            <p class="section-subtitle">Découvrez nos cinq collections conçues pour raconter votre histoire.</p>
+
+            <div class="products-grid">
+                <article class="product-card">
+                    <div class="carousel-container" data-current-slide="0">
+                        <div class="zoom-hint">🔍 Agrandir</div>
+                        <img src="Images/B1.jpg" class="carousel-slide active" alt="Bijou 1" onclick="openModal(this)">
+                        <img src="Images/B2.jpg" class="carousel-slide" alt="Bijou 2" onclick="openModal(this)">
+                        <img src="Images/B8.jpg" class="carousel-slide" alt="Bijou 3" onclick="openModal(this)">
+                        <img src="Images/B4.jpg" class="carousel-slide" alt="Bijou 4" onclick="openModal(this)">
+                        <img src="Images/B5.jpg" class="carousel-slide" alt="Bijou 5" onclick="openModal(this)">
+                        <button class="carousel-btn prev-btn" onclick="moveSlide(this, -1)">&#10094;</button>
+                        <button class="carousel-btn next-btn" onclick="moveSlide(this, 1)">&#10095;</button>
+                        <div class="carousel-indicators">
+                            <span class="indicator active"></span><span class="indicator"></span><span class="indicator"></span><span class="indicator"></span><span class="indicator"></span>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                    <h3 class="product-title">Bijoux Gravés</h3>
+                    <p class="product-desc">Colliers et bracelets en acier inoxydable. Gravure sur mesure : prénoms, dates marquantes ou versets.</p>
+                    <div class="pricing-details">
+                    <p>Prix unique <span><strong>8 000 FCFA</strong></span></p>
+                 </div>
+                 </div>
+                 </article>
+
+                <article class="product-card">
+                    <div class="carousel-container" data-current-slide="0">
+                        <div class="zoom-hint">🔍 Agrandir</div>
+                        <img src="Images/Cas1.jpg" class="carousel-slide active" alt="Casquette 1" onclick="openModal(this)">
+                        <img src="Images/Cas2.jpg" class="carousel-slide" alt="Casquette 2" onclick="openModal(this)">
+                        <img src="Images/Cas3.jpg" class="carousel-slide" alt="Casquette 3" onclick="openModal(this)">
+                        <img src="Images/Cas4.jpg" class="carousel-slide" alt="Casquette 4" onclick="openModal(this)">
+                        <img src="Images/Cas5.jpg" class="carousel-slide" alt="Casquette 5" onclick="openModal(this)">
+                        <button class="carousel-btn prev-btn" onclick="moveSlide(this, -1)">&#10094;</button>
+                        <button class="carousel-btn next-btn" onclick="moveSlide(this, 1)">&#10095;</button>
+                        <div class="carousel-indicators">
+                            <span class="indicator active"></span><span class="indicator"></span><span class="indicator"></span><span class="indicator"></span><span class="indicator"></span>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                    <h3 class="product-title">Casquettes Custom</h3>
+                    <p class="product-desc">Modèles premium (NY, LA) avec flocage haute définition de qualité. Une touche urbaine et unique.</p>
+   
+                    <div class="pricing-details">
+                    <p>À l'unité <span><strong>8 000 FCFA</strong></span></p>
+                    <p>Prix de gros <span><strong>6 000 FCFA</strong></span></p>
+                    </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="carousel-container" data-current-slide="0">
+                        <div class="zoom-hint">🔍 Agrandir</div>
+                        <img src="Images/Ts1.jpg" class="carousel-slide active" alt="Tee-shirt 1" onclick="openModal(this)">
+                        <img src="Images/Ts2.jpg" class="carousel-slide" alt="Tee-shirt 2" onclick="openModal(this)">
+                        <img src="Images/Ts3.jpg" class="carousel-slide" alt="Tee-shirt 3" onclick="openModal(this)">
+                        <img src="Images/Ts4.jpg" class="carousel-slide" alt="Tee-shirt 4" onclick="openModal(this)">
+                        <img src="Images/Ts5.jpg" class="carousel-slide" alt="Tee-shirt 5" onclick="openModal(this)">
+                        <button class="carousel-btn prev-btn" onclick="moveSlide(this, -1)">&#10094;</button>
+                        <button class="carousel-btn next-btn" onclick="moveSlide(this, 1)">&#10095;</button>
+                        <div class="carousel-indicators">
+                            <span class="indicator active"></span><span class="indicator"></span><span class="indicator"></span><span class="indicator"></span><span class="indicator"></span>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Tee-shirts Signature</h3>
+                        <p class="product-desc">Exprimez votre style au quotidien. Personnalisation complète avec vos photos ou messages inspirants.</p>
+                        <div class="pricing-details">
+                            <p> Prix unique <span><strong>13 000 FCFA </strong></span></p>
+                            </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="carousel-container" data-current-slide="0">
+                        <div class="zoom-hint">🔍 Agrandir</div>
+                        <img src="Images/M1.jpg" class="carousel-slide active" alt="Maillot 1" onclick="openModal(this)">
+                        <img src="Images/M2.jpg" class="carousel-slide" alt="Maillot 2" onclick="openModal(this)">
+                        <img src="Images/M3.jpg" class="carousel-slide" alt="Maillot 3" onclick="openModal(this)">
+                        <img src="Images/M4.jpg" class="carousel-slide" alt="Maillot 4" onclick="openModal(this)">
+                        <img src="Images/M5.jpg" class="carousel-slide" alt="Maillot 5" onclick="openModal(this)">
+                        <button class="carousel-btn prev-btn" onclick="moveSlide(this, -1)">&#10094;</button>
+                        <button class="carousel-btn next-btn" onclick="moveSlide(this, 1)">&#10095;</button>
+                        <div class="carousel-indicators">
+                            <span class="indicator active"></span><span class="indicator"></span><span class="indicator"></span><span class="indicator"></span><span class="indicator"></span>
+                        </div>
+                    </div>
+                    <div class="product-content">
+    <h3 class="product-title">Maillots Personnalisés</h3>
+    <p class="product-desc">Pour l'esprit d'équipe ou l'amour du sport. Flocage professionnel de vos numéros et noms favoris.</p>
+   
+                   <div class="pricing-details">
+                   <p>Maillot simple <span><strong>12 000 FCFA</strong></span></p>
+                   <p>Floqué (sans photo) <span><strong>16 000 FCFA</strong></span></p>
+                   <p>Floqué (avec photo) <span><strong> de 18 000 à 20 000 FCFA</strong></span></p>
+                   </div>
+                   </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="carousel-container" data-current-slide="0">
+                        <div class="zoom-hint">🔍 Agrandir</div>
+                        <img src="Images/Pol1.jpg" class="carousel-slide active" alt="Polaroid 1" onclick="openModal(this)">
+                        <img src="Images/Pol2.jpg" class="carousel-slide" alt="Polaroid 2" onclick="openModal(this)">
+                        <img src="Images/Pol3.jpg" class="carousel-slide" alt="Polaroid 3" onclick="openModal(this)">
+                        <img src="Images/Pol4.jpg" class="carousel-slide" alt="Polaroid 4" onclick="openModal(this)">
+                        <img src="Images/Pol5.jpg" class="carousel-slide" alt="Polaroid 5" onclick="openModal(this)">
+                        <button class="carousel-btn prev-btn" onclick="moveSlide(this, -1)">&#10094;</button>
+                        <button class="carousel-btn next-btn" onclick="moveSlide(this, 1)">&#10095;</button>
+                        <div class="carousel-indicators">
+                            <span class="indicator active"></span><span class="indicator"></span><span class="indicator"></span><span class="indicator"></span><span class="indicator"></span>
+                        </div>
+                    </div>
+                    <div class="product-content">
+    <h3 class="product-title">Tirages Polaroïds</h3>
+    <p class="product-desc">Immortalisez vos moments forts avec un style vintage. Idéal pour offrir ou décorer votre intérieur.</p>
+   
+                       <div class="pricing-details">
+                       <p>Pack de 10 à <span><strong>3 500 FCFA</strong></span></p>
+                       <p>Pack de 15 à <span><strong>5 000 FCFA</strong></span></p>
+                       </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="conseils" class="advice-section">
+        <div class="container">
+            <h2 class="section-title">L'Atelier : Soin & Style</h2>
+            <p class="section-subtitle">Découvrez nos astuces pour entretenir vos pièces et les porter avec distinction.</p>
+
+            <div class="advice-grid">
+                <div class="advice-card">
+                    <div class="advice-icon">✨</div>
+                    <h3>Éclat de vos Bijoux</h3>
+                    <p>Pour préserver la gravure sur l'acier inoxydable, évitez le parfum direct et rangez-les dans leur pochon après usage.</p>
+                </div>
+              
+                <div class="advice-card">
+                    <div class="advice-icon">🧢</div>
+                    <h3>Soin des Casquettes</h3>
+                    <p>Nettoyage manuel uniquement. La machine déforme définitivement la visière et abîme la couleur .</p>
+                </div>
+              
+                <div class="advice-card">
+                    <div class="advice-icon">🧺</div>
+                    <h3>Lavage des Textiles</h3>
+                    <p>Lavage à l'envers à 30°C. Repassage obligatoire sur l'envers pour protéger les visuels personnalisés.</p>
+                </div>
+
+                <div class="advice-card">
+                    <div class="advice-icon">💎</div>
+                    <h3>L'Art de l'Agencement</h3>
+                    <p>Associez vos colliers gravés à un col rond ou V. Jouez sur les longueurs de chaînes pour un effet chic.</p>
+                </div>
+
+                <div class="advice-card">
+                    <div class="advice-icon">👕</div>
+                    <h3>L'Harmonie du Port</h3>
+                    <p>Accordez la couleur de votre casquette aux détails de votre maillot pour une allure urbaine cohérente.</p>
+                </div>
+
+                <div class="advice-card">
+                    <div class="advice-icon">📸</div>
+                    <h3>Inspirations Polaroïds</h3>
+                    <p>Créez un mur de souvenirs avec des guirlandes ou glissez-les derrière votre coque de téléphone.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="guide-achat" class="guide-section">
+        <div class="guide-block">
+            <h2 class="guide-title">Comment commander ?</h2>
+            <p class="guide-intro">
+                La procédure de commande a été pensée pour être simple et entièrement sur-mesure. Voici les étapes pour donner vie à vos envies :
+            </p>
+          
+            <div class="steps-container">
+                <div class="step-card">
+                    <div class="step-icon">🛍️</div>
+                    <h3>1. Le Choix</h3>
+                    <p>Sélectionnez votre article et définissez votre personnalisation (nom, date, verset ou citation).</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-icon">💬</div>
+                    <h3>2. L'Échange</h3>
+                    <p>Discutons du rendu final, des détails esthétiques et du prix ensemble directement sur WhatsApp.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-icon">📦</div>
+                    <h3>3. La Livraison</h3>
+                    <p>Disponible aussi bien à Libreville qu'à Franceville.Les prix de la livraison varient en fonction de votre quartier. Possibilité de récupérer la commande en main propre.</p>
+                </div>
+            </div>
+        </div>
+
+        <hr class="elegant-divider">
+
+        <div class="guide-block">
+            <h2 class="guide-title">Pourquoi choisir Maison Laïsma ?</h2>
+            <p class="guide-intro">
+                Nous offrons des créations uniques alliant une esthétique irréprochable à un service client à votre écoute.
+            </p>
+          
+            <div class="trust-badges">
+                <div class="badge">
+                    <span class="badge-icon">✨</span>
+                    <p><strong>Qualité Garantie</strong><br>Acier inoxydable & Flocage haute définition.</p>
+                </div>
+                <div class="badge">
+                    <span class="badge-icon">🤝</span>
+                    <p><strong>Prix Flexible</strong><br>Nous échangeons pour que l'élégance reste accessible à tous les budgets.</p>
+                </div>
+            </div>
+        </div>
+
+        <hr class="elegant-divider">
+
+        <div class="guide-block">
+            <h2 class="guide-title">Comment régler vos achats ?</h2>
+            <p class="guide-intro">Pour votre sécurité, nous privilégions les transactions mobiles rapides.</p>
+            <div class="payment-method">
+                <span class="badge-icon">💳</span>
+                <p><strong>Paiement Facile</strong><br> Paiement sécurisé et flexible : validez votre commande selon les modalités qui vous arrangent, soit AirtelMoney ou MoovMoney.</p>
+            </div>
+        </div>
+
+        <div class="cta-container">
+            <h2 class="cta-title">Un projet précis ou une idée de cadeau ?</h2>
+            <a href="https://api.whatsapp.com/send?phone=24162062674" target="_blank" class="whatsapp-btn">
+                📱 Discutons sur WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>© 2026 Maison Laïsma | Conçu par Hlodowig</p>
+            <p> Libreville -- Franceville </p>
+            <p> +24174026634 / +24165684260</p>
+        </div>
+    </footer>
+
+    <div id="imageModal" class="modal">
+        <span class="close-modal" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="img-in-modal" alt="Image agrandie">
+    </div>
+
+    <script src="sprint.js"></script>
+</body>
+</html>
